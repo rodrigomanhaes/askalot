@@ -1,10 +1,10 @@
 <h1>Answers for <%= @questionnaire.title %></h1>
 
 <ol>
-  <% @answer.items.each do |item| %>
+  <% @answer.items.group_by {|item| item.option.question }.each do |elem| %>
     <li class='answer'>
-      <%= item.option.question.text %>
-      <%= item.option.text %>
+      <%= elem[0].text %>
+      <%= elem[1].map {|item| item.option.text }.join(', ') %>
     </li>
   <% end %>
 </ol>
