@@ -16,8 +16,8 @@ feature 'questionnaire filling' do
     visit new_questionnaire_answer_path(questionnaire)
   end
 
-  scenario 'basic multiple choice' do
-    check "Pedro Alvares Cabral"
+  scenario 'choose single options' do
+    choose "Pedro Alvares Cabral"
     check "Alberto Santos-Dumont"
     click_button "Answer"
     page.should have_content 'Who discovered Brazil? Pedro Alvares Cabral'
@@ -25,7 +25,7 @@ feature 'questionnaire filling' do
   end
 
   scenario 'choose multiple options' do
-    check "Pedro Alvares Cabral"
+    choose "Pedro Alvares Cabral"
     check "Alberto Santos-Dumont"
     check "Mario Brothers"
     click_button "Answer"

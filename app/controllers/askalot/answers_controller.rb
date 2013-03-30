@@ -10,8 +10,11 @@ module Askalot
     def create
       @answer = Answer.new
       @answer.questionnaire = @questionnaire
-      @answer.items = params.keys.grep(/^[0-9]+\_[0-9]+\_[0-9]+$/).
-        map {|s| s.split('_').last }.
+      @answer.items = params.keys.grep(/^[0-9]+\_[0-9]+/).
+        map {|key|
+          parts = key.split('_')
+          parts.count == 3 ? parts.last : params[key]
+        }.
         map {|id| item = AnswerItem.new; item.option_id = id; item }
       if @answer.save
         redirect_to [@questionnaire, @answer]
