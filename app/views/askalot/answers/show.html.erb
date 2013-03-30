@@ -1,0 +1,10 @@
+<h1>Answers for <%= @questionnaire.title %></h1>
+
+<ol>
+  <% @answer.items.each do |item| %>
+    <li class='answer'>
+      <%= item.option.question.text %>
+      <%= item.option.text %>
+    </li>
+  <% end %>
+</ol>

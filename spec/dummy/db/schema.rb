@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330025703) do
+ActiveRecord::Schema.define(:version => 20130330051508) do
+
+  create_table "askalot_answer_items", :force => true do |t|
+    t.integer  "answer_id"
+    t.integer  "option_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "askalot_answer_items", ["answer_id"], :name => "index_askalot_answer_items_on_answer_id"
+  add_index "askalot_answer_items", ["option_id"], :name => "index_askalot_answer_items_on_option_id"
+
+  create_table "askalot_answers", :force => true do |t|
+    t.integer  "questionnaire_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "askalot_answers", ["questionnaire_id"], :name => "index_askalot_answers_on_questionnaire_id"
 
   create_table "askalot_options", :force => true do |t|
     t.string   "text"

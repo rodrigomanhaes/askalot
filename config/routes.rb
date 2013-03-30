@@ -1,7 +1,5 @@
 Askalot::Engine.routes.draw do
-  get "questionnaires/run"
-
-  resources :questionnaires do
-    get :run, on: :member
+  resources :questionnaires, except: :all do
+    resources :answers, only: [:new, :create, :show]
   end
 end

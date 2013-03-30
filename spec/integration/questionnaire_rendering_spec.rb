@@ -10,7 +10,7 @@ feature 'questionnaire rendering' do
       "Wachowski Brothers", "Mario Brothers", "Alberto Santos-Dumont",
       "Warner Brothers")
 
-    visit run_questionnaire_path(questionnaire)
+    visit new_questionnaire_answer_path(questionnaire)
     within('.question:nth-child(1)') do
       page.should have_content 'Who discovered Brazil?'
       page.should have_unchecked_field 'Pedro Alvares Cabral'
