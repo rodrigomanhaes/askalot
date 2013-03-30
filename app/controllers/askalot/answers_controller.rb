@@ -13,8 +13,11 @@ module Askalot
       @answer.items = params.keys.grep(/^[0-9]+\_[0-9]+\_[0-9]+$/).
         map {|s| s.split('_').last }.
         map {|id| item = AnswerItem.new; item.option_id = id; item }
-      @answer.save
-      redirect_to [@questionnaire, @answer]
+      if @answer.save
+        redirect_to [@questionnaire, @answer]
+      else
+        render 'new'
+      end
     end
 
     def show
