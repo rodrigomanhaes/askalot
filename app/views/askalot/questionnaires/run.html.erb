@@ -1,0 +1,17 @@
+<h1><%= @questionnaire.title %></h1>
+
+<ol>
+  <% @questionnaire.questions.each do |question| %>
+    <li class='question'>
+      <%= question.text %>
+      <ul>
+        <% question.options.each do |option| %>
+          <li>
+            <%= check_box_tag option_id(option) %>
+            <%= label_tag option_id(option), option.text %>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ol>

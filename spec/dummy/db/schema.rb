@@ -11,30 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330020837) do
+ActiveRecord::Schema.define(:version => 20130330025703) do
 
-  create_table "options", :force => true do |t|
+  create_table "askalot_options", :force => true do |t|
     t.string   "text"
     t.integer  "question_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
-  add_index "options", ["question_id"], :name => "index_options_on_question_id"
+  add_index "askalot_options", ["question_id"], :name => "index_askalot_options_on_question_id"
 
-  create_table "questionnaires", :force => true do |t|
+  create_table "askalot_questionnaires", :force => true do |t|
     t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "questions", :force => true do |t|
+  create_table "askalot_questions", :force => true do |t|
     t.string   "text"
     t.integer  "questionnaire_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
 
-  add_index "questions", ["questionnaire_id"], :name => "index_questions_on_questionnaire_id"
+  add_index "askalot_questions", ["questionnaire_id"], :name => "index_askalot_questions_on_questionnaire_id"
 
 end

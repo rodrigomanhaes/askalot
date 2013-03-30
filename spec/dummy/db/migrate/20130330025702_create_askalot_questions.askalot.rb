@@ -1,12 +1,12 @@
-# This migration comes from askalot (originally 20130330012952)
+# This migration comes from askalot (originally 20130330022955)
 class CreateAskalotQuestions < ActiveRecord::Migration
   def change
-    create_table :questions do |t|
+    create_table :askalot_questions do |t|
       t.string :text
       t.references :questionnaire
 
       t.timestamps
     end
-    add_index :questions, :questionnaire_id
+    add_index :askalot_questions, :questionnaire_id
   end
 end
