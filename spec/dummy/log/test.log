@@ -1,0 +1,163 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 02:00:01 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 02:05:28 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 02:05:59 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 02:06:21 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 02:19:16 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 03:37:21 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-24 03:45:09 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (33.5ms)[0m  INSERT INTO "questionnaires" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:53:46 UTC +00:00], ["title", nil], ["updated_at", Sat, 30 Mar 2013 01:53:46 UTC +00:00]]
+  [1m[36m (253.2ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "questionnaires" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:31 UTC +00:00], ["title", nil], ["updated_at", Sat, 30 Mar 2013 01:56:31 UTC +00:00]]
+  [1m[36m (196.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["questionnaire_id", 2], ["text", "Who discovered Brazil?"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[35m (221.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["question_id", 1], ["text", "Pedro Alvares Cabral"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[36m (217.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["question_id", 1], ["text", "Diego Armando Maradona"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[35m (174.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["question_id", 1], ["text", "Cristoforo Colombo"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[36m (109.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["question_id", 1], ["text", "Marco Polo"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[35m (106.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00], ["questionnaire_id", 2], ["text", "Who invented the airplane?"], ["updated_at", Sat, 30 Mar 2013 01:56:32 UTC +00:00]]
+  [1m[36m (185.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00], ["question_id", 2], ["text", "Wachowski Brothers"], ["updated_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00]]
+  [1m[35m (174.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00], ["question_id", 2], ["text", "Mario Brothers"], ["updated_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00]]
+  [1m[36m (141.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00], ["question_id", 2], ["text", "Alberto Santos-Dumont"], ["updated_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00]]
+  [1m[35m (239.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00], ["question_id", 2], ["text", "Warner Brothers"], ["updated_at", Sat, 30 Mar 2013 01:56:33 UTC +00:00]]
+  [1m[36m (152.4ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "questionnaires" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:11 UTC +00:00], ["title", nil], ["updated_at", Sat, 30 Mar 2013 01:58:11 UTC +00:00]]
+  [1m[36m (156.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:11 UTC +00:00], ["questionnaire_id", 3], ["text", "Who discovered Brazil?"], ["updated_at", Sat, 30 Mar 2013 01:58:11 UTC +00:00]]
+  [1m[35m (143.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["question_id", 3], ["text", "Pedro Alvares Cabral"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[36m (182.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["question_id", 3], ["text", "Diego Armando Maradona"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[35m (151.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["question_id", 3], ["text", "Cristoforo Colombo"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[36m (163.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["question_id", 3], ["text", "Marco Polo"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[35m (109.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["questionnaire_id", 3], ["text", "Who invented the airplane?"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[36m (119.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00], ["question_id", 4], ["text", "Wachowski Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:12 UTC +00:00]]
+  [1m[35m (173.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00], ["question_id", 4], ["text", "Mario Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00]]
+  [1m[36m (174.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00], ["question_id", 4], ["text", "Alberto Santos-Dumont"], ["updated_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00]]
+  [1m[35m (132.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00], ["question_id", 4], ["text", "Warner Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:13 UTC +00:00]]
+  [1m[36m (162.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "questionnaires" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:23 UTC +00:00], ["title", nil], ["updated_at", Sat, 30 Mar 2013 01:58:23 UTC +00:00]]
+  [1m[36m (194.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["questionnaire_id", 4], ["text", "Who discovered Brazil?"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[35m (191.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["question_id", 5], ["text", "Pedro Alvares Cabral"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[36m (169.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["question_id", 5], ["text", "Diego Armando Maradona"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[35m (174.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["question_id", 5], ["text", "Cristoforo Colombo"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[36m (119.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["question_id", 5], ["text", "Marco Polo"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[35m (163.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "questions" ("created_at", "questionnaire_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00], ["questionnaire_id", 4], ["text", "Who invented the airplane?"], ["updated_at", Sat, 30 Mar 2013 01:58:24 UTC +00:00]]
+  [1m[36m (140.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00], ["question_id", 6], ["text", "Wachowski Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00]]
+  [1m[35m (176.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00], ["question_id", 6], ["text", "Mario Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00]]
+  [1m[36m (187.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00], ["question_id", 6], ["text", "Alberto Santos-Dumont"], ["updated_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00]]
+  [1m[35m (185.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "options" ("created_at", "question_id", "text", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00], ["question_id", 6], ["text", "Warner Brothers"], ["updated_at", Sat, 30 Mar 2013 01:58:25 UTC +00:00]]
+  [1m[36m (496.3ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-29 23:14:09 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-29 23:14:26 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
