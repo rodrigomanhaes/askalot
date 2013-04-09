@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330070310) do
+ActiveRecord::Schema.define(:version => 20130402192522) do
 
   create_table "askalot_answer_items", :force => true do |t|
     t.integer  "answer_id"
@@ -48,10 +48,10 @@ ActiveRecord::Schema.define(:version => 20130330070310) do
 
   create_table "askalot_questions", :force => true do |t|
     t.string   "text"
-    t.boolean  "multiple",         :default => false
+    t.string   "kind"
     t.integer  "questionnaire_id"
-    t.datetime "created_at",                          :null => false
-    t.datetime "updated_at",                          :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "askalot_questions", ["questionnaire_id"], :name => "index_askalot_questions_on_questionnaire_id"

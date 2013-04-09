@@ -5,10 +5,10 @@ feature 'questionnaire filling' do
     questionnaire = create(:questionnaire)
     create_question(questionnaire, 'Who discovered Brazil?',
       'Pedro Alvares Cabral', 'Diego Armando Maradona', 'Cristoforo Colombo',
-      'Marco Polo')
+      'Marco Polo', kind: :single)
     create_question(questionnaire, "Who invented the airplane?",
       "Wachowski Brothers", "Mario Brothers", "Alberto Santos-Dumont",
-      "Warner Brothers", multiple: true)
+      "Warner Brothers", kind: :multiple)
     questionnaire
   end
 

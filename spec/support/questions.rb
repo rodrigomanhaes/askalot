@@ -1,5 +1,4 @@
-def create_question(questionnaire, question_text, *options_text)
-  opts = options_text.last.is_a?(Hash) ? options_text.pop : {}
+def create_question(questionnaire, question_text, *options_text, opts)
   question = create(:question, { text: question_text,
     questionnaire: questionnaire }.merge(opts))
   options_text.each do |option_text|

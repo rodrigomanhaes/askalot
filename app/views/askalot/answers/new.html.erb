@@ -4,19 +4,23 @@
   <ol>
     <% @questionnaire.questions.each do |question| %>
       <li class='question'>
-        <%= question.text %>
-        <ul>
-          <% question.options.each do |option| %>
-            <li>
-              <%= option_tag(question, option_id(option)) %>
-              <%= label_tag option_id(option), option.text %>
-            </li>
-          <% end %>
-        </ul>
+        <%= label_tag question_id(question), question.text %>
+        <% unless question.open_ended? %>
+          <ul>
+            <% question.options.each do |option| %>
+              <li>
+                <%= option_tag(question, option_id(option)) %>
+                <%= label_tag option_id(option), option.text %>
+              </li>
+            <% end %>
+          </ul>
+        <% else %>
+          <br/>
+          <%= text_answer_tag(question) %>
+        <% end %>
       </li>
     <% end %>
   </ol>
 
   <%= submit_tag 'Answer' %>
 <% end %>
-
